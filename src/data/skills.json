@@ -1,0 +1,23 @@
+[
+  {
+    "category": "LANGUAGES",
+    "items": ["Java", "Python", "JavaScript", "MySQL"]
+  },
+  {
+    "category": "WEB",
+    "items": [
+      "HTML / CSS",
+      "React",
+      "Node",
+      "Express",
+      "PostgreSQL",
+      "Sequelize",
+      "MongoDB",
+      "Handlebars"
+    ]
+  },
+  {
+    "category": "TOOLS",
+    "items": ["GitHub", "Postman", "Insomnia", "Android Studio", "Heroku"]
+  }
+]
