@@ -2,7 +2,7 @@ import data from '../data/skills.json'
 
 const Skills = () => {
   return (
-    <section className="skills">
+    <section className="skills" id="skill">
       <h3>Skills</h3>
       <div className="categories">
         {data.map((categories) => (

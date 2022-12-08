@@ -1,9 +1,5 @@
 [
   {
-    "category": "LANGUAGES",
-    "items": ["Java", "Python", "JavaScript", "MySQL"]
-  },
-  {
     "category": "WEB",
     "items": [
       "HTML / CSS",
@@ -15,6 +11,10 @@
       "MongoDB",
       "Handlebars"
     ]
+  },
+  {
+    "category": "LANGUAGES",
+    "items": ["Java", "Python", "JavaScript", "MySQL"]
   },
   {
     "category": "TOOLS",
