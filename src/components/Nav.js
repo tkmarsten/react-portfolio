@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { FiX, FiMenu } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
   const [toggle, setToggle] = useState(false);
@@ -18,7 +19,8 @@ const Nav = () => {
         <li><a href="#about">About</a></li>
         <li><a href="#skill">Skills</a></li>
         <li><a href="#project">Portfolio</a></li>
-        <li>Contact</li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><span className="resume"><a href="tiarnanm_resume.pdf" download>Resume</a></span></li>
       </ul>
     </nav>
   )
