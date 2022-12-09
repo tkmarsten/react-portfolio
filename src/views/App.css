@@ -72,7 +72,7 @@ section {
 }
 
 .navbar.expanded .links {
-  background-color: var(--primary);
+  background-color: #2f2f2f;
   position: absolute;
   top: 60px;
   right: 0;
@@ -103,12 +103,13 @@ section {
 }
 
 .home {
+  max-width: 1000px;
   margin: 0 1rem;
 }
 
 .banner {
   display: grid;
-  place-content: center;
+  place-content: center stretch;
   height: 100vh;
 }
 
@@ -125,6 +126,12 @@ section {
   border: 2px solid var(--accent);
   border-radius: 5px;
   font-weight: 600;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
 }
 
 .about p {
@@ -224,6 +231,7 @@ section {
 
 input {
   height: 24px;
+  border: none;
 }
 
 textarea {
@@ -233,6 +241,15 @@ textarea {
 label,
 .field {
   margin-bottom: 0.5rem;
+}
+
+.field {
+  -webkit-box-shadow: 5px 5px 5px 5px red;
+  box-shadow: 0 0 10px red;
+}
+
+.field:focus {
+  box-shadow: none;
 }
 
 footer {
@@ -249,4 +266,28 @@ footer h5 {
 
 .footer-links > * {
   margin: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar.expanded .links {
+    width: 30%;
+  }
+
+  .categories {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar.expanded .links {
+    width: 20%;
+  }
+
+  .about {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .home {
+    margin: auto;
+  }
 }

@@ -1,10 +1,10 @@
 const Contact = () => {
   return (
-    <div className="contact">
+    <div id="contact" className="contact">
       <h1>Contact me</h1>
       <form className="contact-form">
         <label for="name">Name</label>
-        <input type="text" name="name" className="field" />
+        <input type="text" name="name" id="name" className="field" />
         <label for="email">Email</label>
         <input type="text" name="email" className="field" />
         <label for="message">Message</label>
